@@ -16,41 +16,55 @@ public class Calculator {
 	public Calculator () {
 		total = 0;  // not needed - included for clarity
 	}
+	
+	
 /**
  * This function will return the current total.	
  */
 	public int getTotal () {
-		return 0;
+		return total;
 	}
+	
+	
 /**	
  *This function will add numbers to the total
  */
 	public void add (int value) {
-		
+		total += value;
 	}
+	
+	
 /**
  * The subtract function will subract value from the total
  */
 	public void subtract (int value) {
-		
+		total -= value;
 	}
+	
+	
 /**
  * Multiply will multiply the total by a value give.
  */
 	public void multiply (int value) {
-		
+		total *= value;
 	}
+	
+	
 /**
  * Divide will divide the total by value unless the value is zero. If zero,
  * the total will become zero
  */
 	public void divide (int value) {
-		
+		if(value != 0)
+			total /= value;
+		else
+			total = 0;
 	}
+	
+	
 /**
  * The getHistory Function will be used to show the history for this iteration
  * of calculator, including zero 
- * @return
  */
 	public String getHistory () {
 		return "";
