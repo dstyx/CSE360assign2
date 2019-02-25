@@ -18,14 +18,12 @@ public class cse360assign2 {
 		
 		Calculator test = new Calculator();
 		
-		test.add(first);
-		test.subtract(second);
-		test.multiply(first);
-		test.divide(2);
-		test.divide(0);
+		test.add(10);
+		test.subtract(4);
+		test.divide(3);
+		test.multiply(6);
 		
 		System.out.println(test.getTotal());
-		
-		
+		System.out.println(test.getHistory());		
 	}
 }

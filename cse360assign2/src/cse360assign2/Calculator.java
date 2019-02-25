@@ -12,6 +12,7 @@ package cse360assign2;
 public class Calculator {
 
 	private int total;
+	private String output = "0 ";
 	
 	public Calculator () {
 		total = 0;  // not needed - included for clarity
@@ -31,6 +32,7 @@ public class Calculator {
  */
 	public void add (int value) {
 		total += value;
+		output += "+ " + value + " ";
 	}
 	
 	
@@ -39,6 +41,7 @@ public class Calculator {
  */
 	public void subtract (int value) {
 		total -= value;
+		output += "- " + value + " ";
 	}
 	
 	
@@ -47,6 +50,7 @@ public class Calculator {
  */
 	public void multiply (int value) {
 		total *= value;
+		output += "* " + value + " ";
 	}
 	
 	
@@ -59,6 +63,7 @@ public class Calculator {
 			total /= value;
 		else
 			total = 0;
+		output += "/ " + value + " ";
 	}
 	
 	
@@ -67,6 +72,8 @@ public class Calculator {
  * of calculator, including zero 
  */
 	public String getHistory () {
-		return "";
+		
+		
+		return output;
 	}
 }
